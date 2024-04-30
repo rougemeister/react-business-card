@@ -1,42 +1,139 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  background-color: #23252C;
+
+  max-height: 100vh;
+
+}
+
+/* typography */
+
+h1 {
+  margin-bottom: 5px;
+  font-size: 1.85rem;
+}
+
+h2 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 0.90rem;
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+/* layout */
+
+.main-page {  
+  max-width: 550px;
+  margin: auto;
+  padding: 1em 4em;
+  color: white;
+  
+}
+
+.container {
+  background-color: #1A1B21;
+}
+
+.profile-text-container {
+  padding: 0 2em;
+  line-height: 1.5em;
   text-align: center;
+ 
+ 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.profile-job-title {
+  margin: 0;
+  font-size: .9rem;
+  color: #F3BF99;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.main-text-container {
+  padding: 0 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.profile-website {
+  margin: 5px;
 }
 
-.card {
-  padding: 2em;
+.profile-links-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
 }
 
-.read-the-docs {
-  color: #888;
+.footer {
+  background-color: #161619;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: 1.75em;
+  gap: 22px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+/* links */
+
+.btn {
+  width: 47%;
+  background-color: white;
+  color: #23252C;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+}
+
+.btn:focus, .btn:hover{
+  filter: brightness(85%);
+}
+
+.btn-dark {
+  background-color: #5093E2;
+  color: white;
+}
+
+
+
+/* images */
+
+
+.profile-image {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 0.85em;
+}
+
+
+.icon {
+  font-size: 30px;
+  color: #918E9B;
+}
+
+.icon:focus, .icon:hover {
+  transform: scale(1.1);
 }
